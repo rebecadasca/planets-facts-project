@@ -1,0 +1,85 @@
+header {
+    height: 85px;
+    display:grid;
+    grid-template-columns: 700px auto 500px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    
+
+    a {
+        font-family: 'Antonio', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        transition: text-shadow 0.2s ease-in-out, color 0.1s ease-in-out;
+        
+
+        &:hover {
+            text-shadow: 0 0 10px rgba(146,239,255, 3);
+        }
+    }
+    .first-half-header {
+        grid-column-start: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 25px;
+
+        .logo {
+            height: 90px;
+            width: 100px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .the-planets span {
+            cursor: pointer;
+            transition: text-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+        
+            &:hover {
+                text-shadow: 0 0 10px rgba(146,239,255, 3);
+            }
+            }
+
+
+        .search-container {
+            border: 1.5px solid rgba(255, 255, 255, 0.80);
+            height: 40px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+
+        }
+
+            input {
+                height: 100%;
+                border: none;
+                background-color: transparent;
+                padding-left: 5px ;
+                &::placeholder {
+                    color: white;
+                    font-size: 16px;
+                    font-family: 'League Spartan', sans-serif;
+                    
+                }
+            }
+
+            span {
+                color: white;
+                margin-right: 5px;
+            }
+
+
+    }
+
+    .second-half-header {
+        grid-column-start: 3;
+        display: flex;
+        margin: 25px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 25px;
+    }
+
+}

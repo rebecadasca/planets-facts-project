@@ -1,0 +1,68 @@
+main .main-container {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 600px auto;
+  align-items: center;
+  justify-content: center;
+}
+main .main-container .astronaut {
+  grid-column-start: 1;
+}
+main .main-container .astronaut img {
+  width: 100%;
+  height: 100%;
+}
+main .main-container .description {
+  background-image: url(./img/IMG_0411.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+main .main-container .description h1 {
+  color: white;
+  font-family: "Antonio", sans-serif;
+  font-size: 48px;
+  cursor: context-menu;
+}
+main .main-container .description p {
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  line-height: 150%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 30px;
+  cursor: context-menu;
+}
+main .main-container .description input {
+  width: 350px;
+  height: 48px;
+  border-radius: 5px;
+  border: transparent;
+  cursor: pointer;
+  background: linear-gradient(to right, #0892ef, #2ec889);
+  opacity: 0.8;
+  transition: background-color 0.1 ease-in-out;
+}
+main .main-container .description input:hover {
+  opacity: 1;
+}
+main .main-container .description input[value="Let's explore"] {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: text-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: font-size 0.1s ease-in-out;
+}
+main .main-container .description input[value="Let's explore"]:hover {
+  text-shadow: 0 0 10px rgb(146, 239, 255);
+  font-size: 20px;
+}/*# sourceMappingURL=homepage_main.css.map */
